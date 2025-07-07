@@ -1,0 +1,203 @@
+/* Global Styles */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    overflow-y: auto;
+}
+
+/* Login Form Container */
+.login-form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+    margin-top: 20px;
+}
+
+
+/* Form Header */
+.login-form h2 {
+    color: #1e3a8a;
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Form Input Fields */
+.login-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    color: #1e3a8a;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #1e3a8a;
+    outline: none;
+    box-shadow: 0 0 8px rgba(30, 58, 138, 0.3);
+}
+
+.login-form input::placeholder {
+    color: #999;
+}
+
+/* Sign In Button */
+.login-form button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+}
+
+.login-form button:active {
+    transform: translateY(0);
+}
+
+/* Form Footer */
+.login-form .form-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-form .form-footer a {
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.login-form .form-footer a:hover {
+    color: #3b82f6;
+    text-decoration: underline;
+}
+
+/* Logo and Label Styles */
+.header {
+    width: 90px;
+    height: 90px;
+    border-radius: 25px;
+    margin: 0 auto; /* Center the logo */
+    display: block; /* Ensure the logo is a block element */
+}
+
+.logoname {
+    text-align: center; /* Center the text */
+    display: block; /* Ensure it takes full width */
+    margin-top: 10px; /* Add some space between the logo and the label */
+    font-size: 16px; /* Adjust font size if needed */
+    font-weight: 600; /* Make the text bold */
+    color: #1e3a8a; /* Match the color scheme */
+    width: 100%; /* Ensure it spans the full width */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login-form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .login-form h2 {
+        font-size: 24px;
+    }
+
+    .login-form input {
+        padding: 10px;
+    }
+
+    .login-form button {
+        padding: 12px;
+    }
+}
+
+.password-container {
+    margin-bottom: 16px;
+}
+
+.password-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-input-container input {
+    width: 100%;
+    padding-right: 40px; /* Make room for the icon */
+    margin-bottom: 0; /* Remove bottom margin since container handles spacing */
+}
+
+.password-input-container i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    z-index: 2;
+    font-size: 16px;
+    padding: 4px;
+}
+
+.password-input-container i:hover {
+    color: #1e3a8a;
+}
+
+.password-field {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.password-field input {
+    width: 100%;
+    padding: 12px 40px 12px 12px !important;
+    margin-bottom: 0 !important;
+}
+
+.password-field i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    z-index: 1;
+}
+
+.password-field i:hover {
+    color: #1e3a8a;
+}

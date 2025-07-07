@@ -1,0 +1,414 @@
+/* CSS styles for the form */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px; /* Set a max width for larger screens */
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h1 {
+    margin-top: 100px;
+    text-align: center;
+    color: #1e3a8a; /* Change color for better visibility */
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px; /* Increased padding for better spacing */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light background for fieldsets */
+    margin-top: 50px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 18px; /* Increased font size for better visibility */
+    color: #1e3a8a; /* Change color for better visibility */
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px; /* Increased padding for better input field size */
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px; /* Adjusted font size for better readability */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+input[type="date"], input[type="tel"], input[type="text"], input[type="number"] {
+    height: 40px; /* Fixed height for consistent input fields */
+}
+
+select {
+    height: 40px; /* Fixed height for consistent dropdowns */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px; /* Increased padding for better table cell spacing */
+    text-align: left;
+    font-size: 14px; /* Adjusted font size for better readability */
+}
+
+th {
+    background-color: #1e3a8a; /* Header background color */
+    color: white; /* Header text color */
+}
+
+button {
+    width: 100%;
+    padding: 12px; /* Increased padding for a larger button */
+    background-color: #1e3a8a;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Added margin to separate from the last fieldset */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Checkbox styles */
+.checkbox-group {
+    display: grid;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.checkbox-group label {
+    display: grid;
+    grid-template-columns: auto minmax(150px, 1fr) minmax(200px, 2fr);
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin: 0;
+    width: 18px;
+    height: 18px;
+}
+
+/* Radio button styles */
+.radio-group {
+    display: flex;
+    align-items: center; /* Align radio buttons and labels vertically */
+    gap: 20px; /* Add space between radio buttons */
+    margin-bottom: 10px; /* Space below the radio group */
+}
+
+.radio-group label {
+    font-size: 14px; /* Adjust font size for better readability */
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px; /* Add space between radio button and label */
+    width: 16px; /* Set a fixed width for radio buttons */
+    height: 16px; /* Set a fixed height for radio buttons */
+}
+
+.small-input {
+    width: 250px; /* Adjust as needed */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.specify-input {
+    margin-left: 0;
+    width: 100%;
+    height: 36px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Updated CSS for uniform text fields */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Reduced gap between rows */
+    padding: 0 20px; /* Add left and right margin to the container */
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Reduced gap between checkbox and label */
+    font-size: 14px;
+    color: #333;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px; /* Slightly smaller checkbox */
+    height: 16px;
+    accent-color: #1e3a8a;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="text"] {
+    width: 500px; /* Fixed width for all text fields */
+    padding: 6px 10px; /* Reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Slightly smaller border radius */
+    font-size: 13px; /* Smaller font size */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    margin-left: auto; /* Push text fields to the right for alignment */
+}
+
+.checkbox-group input[type="text"]:focus {
+    border-color: #1e3a8a;
+    outline: none;
+}
+
+.checkbox-group input[type="text"]::placeholder {
+    color: #999;
+    font-size: 12px; /* Smaller placeholder font size */
+}
+
+
+.footer {
+    margin-left: -10px;
+    margin-bottom: -18px;
+    border-radius: 10px;
+    width: 840px;
+    height: 190px;
+}
+
+/* Style for the smoking question section */
+.smoking-question {
+    margin-bottom: 10px; /* Adds space below the question */
+}
+
+.smoking-label {
+    font-size: 16px; /* Increase font size */
+    display: block; /* Ensure it takes full width */
+    margin-bottom: 5px; /* Adds space below the label */
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px; /* Adds space between the radio buttons */
+}
+
+/* Style for the smoking details section */
+.smoking-details {
+    display: flex;
+    gap: 10px; /* Adds space between the two inputs */
+    margin-top: 10px; /* Adds some space below the "Do you smoke?" question */
+}
+
+/* Adjust the width of the input field for "Name of Health Professional" */
+.small-input {
+    width: 300px; /* Increase the width as needed */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.smoking-info {
+    width: 100px; /* Adjust the width as needed */
+    padding: 8px; /* Adds some padding inside the input fields */
+    border: 1px solid #ccc; /* Adds a border for better visibility */
+    border-radius: 4px; /* Rounds the corners */
+    font-size: 14px; /* Consistent font size */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Styles for the dynamic vaccine entry system */
+.vaccine-entry {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.vaccine-entry input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.vaccine-entry button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.vaccine-entry button:hover {
+    background-color: #cc0000;
+}
+
+#add-vaccine {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#add-vaccine:hover {
+    background-color: #0d2c6e;
+}
+.pdf-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e3a8a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 600px;
+}
+.pdf-button:hover {
+    background-color: #14275e;
+}
+.small-text {
+    font-size: 12px; /* Adjust the size as needed */
+    color: #666; /* Optional: Change the color for better readability */
+}
+.editable {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.form-group label {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between fields */
+}
+
+/* Add your custom CSS here */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Minimalist Add Special Need Button */
+.add-special-need {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.add-special-need:hover {
+    background-color: #0d2c6e;
+}
+
+/* Minimalist Remove Special Need Button */
+.remove-special-need {
+    background-color: #f8f9fa;
+    color: #dc3545;
+    padding: 4px 8px;
+    border: 1px solid #dc3545;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    width: auto;
+}
+
+.remove-special-need:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+.special-need-entry {
+    margin: 8px 0;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.special-need-entry select {
+    flex: 2;
+    padding: 4px;
+    height: 32px;
+}
+
+.special-need-entry input {
+    flex: 1;
+    padding: 4px;
+    height: 32px;
+}
+.header {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    width: 102.7%; /* Ensure the image takes full width */
+    max-width: 840px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 30px; /* Adjust as needed */
+    margin-left: -10px; /* Adjust as needed */
+}
+
+.logout-btn {
+            width: auto !important;
+            min-width: 0;
+            max-width: 100vw;
+            margin: 0.5rem auto;
+            display: inline-block;
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
+        }
